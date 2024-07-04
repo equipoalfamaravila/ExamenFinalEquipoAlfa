@@ -77,5 +77,10 @@ namespace Proyecto_final_software
                            select V;
             dgvVendedor.DataSource = consulta.ToList();
         }
+
+        private void BtnAtrasVendedor_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

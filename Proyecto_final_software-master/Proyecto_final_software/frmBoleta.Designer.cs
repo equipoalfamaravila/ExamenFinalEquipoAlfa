@@ -41,6 +41,7 @@
             this.dgvBoleta = new System.Windows.Forms.DataGridView();
             this.btnAgregarBoleta = new System.Windows.Forms.Button();
             this.btnConsultarBoleta = new System.Windows.Forms.Button();
+            this.btnAtrasBoleta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBoleta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,7 +152,7 @@
             // 
             // btnConsultarBoleta
             // 
-            this.btnConsultarBoleta.Location = new System.Drawing.Point(438, 195);
+            this.btnConsultarBoleta.Location = new System.Drawing.Point(364, 195);
             this.btnConsultarBoleta.Name = "btnConsultarBoleta";
             this.btnConsultarBoleta.Size = new System.Drawing.Size(119, 42);
             this.btnConsultarBoleta.TabIndex = 14;
@@ -159,11 +160,22 @@
             this.btnConsultarBoleta.UseVisualStyleBackColor = true;
             this.btnConsultarBoleta.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnAtrasBoleta
+            // 
+            this.btnAtrasBoleta.Location = new System.Drawing.Point(584, 195);
+            this.btnAtrasBoleta.Name = "btnAtrasBoleta";
+            this.btnAtrasBoleta.Size = new System.Drawing.Size(119, 42);
+            this.btnAtrasBoleta.TabIndex = 15;
+            this.btnAtrasBoleta.Text = "Atras";
+            this.btnAtrasBoleta.UseVisualStyleBackColor = true;
+            this.btnAtrasBoleta.Click += new System.EventHandler(this.BtnAtrasBoleta_Click);
+            // 
             // frmBoleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtrasBoleta);
             this.Controls.Add(this.btnConsultarBoleta);
             this.Controls.Add(this.btnAgregarBoleta);
             this.Controls.Add(this.dgvBoleta);
@@ -201,5 +213,6 @@
         private System.Windows.Forms.DataGridView dgvBoleta;
         private System.Windows.Forms.Button btnAgregarBoleta;
         private System.Windows.Forms.Button btnConsultarBoleta;
+        private System.Windows.Forms.Button btnAtrasBoleta;
     }
 }

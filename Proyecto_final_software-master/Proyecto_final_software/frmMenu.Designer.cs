@@ -89,6 +89,7 @@
             this.Controls.Add(this.btnBoleta);
             this.Name = "frmMenu";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmMenu_Load);
             this.ResumeLayout(false);
 
         }

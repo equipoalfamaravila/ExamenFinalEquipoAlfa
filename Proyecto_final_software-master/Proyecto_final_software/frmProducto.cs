@@ -83,5 +83,10 @@ namespace Proyecto_final_software
                            select P;
             dgvProducto.DataSource = consulta.ToList();
         }
+
+        private void BtnAtrasProducto_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

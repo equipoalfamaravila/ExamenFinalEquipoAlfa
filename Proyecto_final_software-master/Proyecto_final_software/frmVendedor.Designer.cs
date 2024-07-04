@@ -38,6 +38,7 @@
             this.btnEliminarVendedor = new System.Windows.Forms.Button();
             this.btnConsultarVendedor = new System.Windows.Forms.Button();
             this.dgvVendedor = new System.Windows.Forms.DataGridView();
+            this.btnAtrasVendedor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendedor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +102,7 @@
             // 
             // btnEliminarVendedor
             // 
-            this.btnEliminarVendedor.Location = new System.Drawing.Point(302, 183);
+            this.btnEliminarVendedor.Location = new System.Drawing.Point(260, 183);
             this.btnEliminarVendedor.Name = "btnEliminarVendedor";
             this.btnEliminarVendedor.Size = new System.Drawing.Size(103, 36);
             this.btnEliminarVendedor.TabIndex = 13;
@@ -111,7 +112,7 @@
             // 
             // btnConsultarVendedor
             // 
-            this.btnConsultarVendedor.Location = new System.Drawing.Point(539, 183);
+            this.btnConsultarVendedor.Location = new System.Drawing.Point(432, 183);
             this.btnConsultarVendedor.Name = "btnConsultarVendedor";
             this.btnConsultarVendedor.Size = new System.Drawing.Size(101, 36);
             this.btnConsultarVendedor.TabIndex = 14;
@@ -127,11 +128,22 @@
             this.dgvVendedor.Size = new System.Drawing.Size(712, 174);
             this.dgvVendedor.TabIndex = 15;
             // 
+            // btnAtrasVendedor
+            // 
+            this.btnAtrasVendedor.Location = new System.Drawing.Point(600, 183);
+            this.btnAtrasVendedor.Name = "btnAtrasVendedor";
+            this.btnAtrasVendedor.Size = new System.Drawing.Size(101, 36);
+            this.btnAtrasVendedor.TabIndex = 16;
+            this.btnAtrasVendedor.Text = "Atras";
+            this.btnAtrasVendedor.UseVisualStyleBackColor = true;
+            this.btnAtrasVendedor.Click += new System.EventHandler(this.BtnAtrasVendedor_Click);
+            // 
             // frmVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtrasVendedor);
             this.Controls.Add(this.dgvVendedor);
             this.Controls.Add(this.btnConsultarVendedor);
             this.Controls.Add(this.btnEliminarVendedor);
@@ -163,5 +175,6 @@
         private System.Windows.Forms.Button btnEliminarVendedor;
         private System.Windows.Forms.Button btnConsultarVendedor;
         private System.Windows.Forms.DataGridView dgvVendedor;
+        private System.Windows.Forms.Button btnAtrasVendedor;
     }
 }

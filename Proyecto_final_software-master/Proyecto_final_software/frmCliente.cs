@@ -107,5 +107,11 @@ namespace Proyecto_final_software
         {
 
         }
+
+        private void BtnAtrasCliente_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

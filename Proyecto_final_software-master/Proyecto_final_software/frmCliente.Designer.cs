@@ -40,6 +40,7 @@
             this.btnAgregarCliente = new System.Windows.Forms.Button();
             this.btnEliminarCliente = new System.Windows.Forms.Button();
             this.btnConsultarCliente = new System.Windows.Forms.Button();
+            this.btnAtrasCliente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,7 +125,7 @@
             // 
             // btnAgregarCliente
             // 
-            this.btnAgregarCliente.Location = new System.Drawing.Point(102, 186);
+            this.btnAgregarCliente.Location = new System.Drawing.Point(66, 186);
             this.btnAgregarCliente.Name = "btnAgregarCliente";
             this.btnAgregarCliente.Size = new System.Drawing.Size(154, 35);
             this.btnAgregarCliente.TabIndex = 9;
@@ -134,9 +135,9 @@
             // 
             // btnEliminarCliente
             // 
-            this.btnEliminarCliente.Location = new System.Drawing.Point(328, 192);
+            this.btnEliminarCliente.Location = new System.Drawing.Point(285, 186);
             this.btnEliminarCliente.Name = "btnEliminarCliente";
-            this.btnEliminarCliente.Size = new System.Drawing.Size(153, 29);
+            this.btnEliminarCliente.Size = new System.Drawing.Size(153, 35);
             this.btnEliminarCliente.TabIndex = 10;
             this.btnEliminarCliente.Text = "Eliminar";
             this.btnEliminarCliente.UseVisualStyleBackColor = true;
@@ -144,19 +145,30 @@
             // 
             // btnConsultarCliente
             // 
-            this.btnConsultarCliente.Location = new System.Drawing.Point(562, 192);
+            this.btnConsultarCliente.Location = new System.Drawing.Point(494, 186);
             this.btnConsultarCliente.Name = "btnConsultarCliente";
-            this.btnConsultarCliente.Size = new System.Drawing.Size(120, 29);
+            this.btnConsultarCliente.Size = new System.Drawing.Size(120, 35);
             this.btnConsultarCliente.TabIndex = 11;
             this.btnConsultarCliente.Text = "Consultar";
             this.btnConsultarCliente.UseVisualStyleBackColor = true;
             this.btnConsultarCliente.Click += new System.EventHandler(this.BtnConsultar_Click);
+            // 
+            // btnAtrasCliente
+            // 
+            this.btnAtrasCliente.Location = new System.Drawing.Point(672, 186);
+            this.btnAtrasCliente.Name = "btnAtrasCliente";
+            this.btnAtrasCliente.Size = new System.Drawing.Size(120, 35);
+            this.btnAtrasCliente.TabIndex = 12;
+            this.btnAtrasCliente.Text = "Atras";
+            this.btnAtrasCliente.UseVisualStyleBackColor = true;
+            this.btnAtrasCliente.Click += new System.EventHandler(this.BtnAtrasCliente_Click);
             // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 494);
+            this.Controls.Add(this.btnAtrasCliente);
             this.Controls.Add(this.btnConsultarCliente);
             this.Controls.Add(this.btnEliminarCliente);
             this.Controls.Add(this.btnAgregarCliente);
@@ -192,5 +204,6 @@
         private System.Windows.Forms.Button btnAgregarCliente;
         private System.Windows.Forms.Button btnEliminarCliente;
         private System.Windows.Forms.Button btnConsultarCliente;
+        private System.Windows.Forms.Button btnAtrasCliente;
     }
 }

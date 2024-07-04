@@ -43,6 +43,7 @@
             this.dgvProducto = new System.Windows.Forms.DataGridView();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.btnConsultarProducto = new System.Windows.Forms.Button();
+            this.btnAtrasProducto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,7 +165,7 @@
             // 
             // btnConsultarProducto
             // 
-            this.btnConsultarProducto.Location = new System.Drawing.Point(382, 221);
+            this.btnConsultarProducto.Location = new System.Drawing.Point(366, 221);
             this.btnConsultarProducto.Name = "btnConsultarProducto";
             this.btnConsultarProducto.Size = new System.Drawing.Size(86, 23);
             this.btnConsultarProducto.TabIndex = 18;
@@ -172,11 +173,22 @@
             this.btnConsultarProducto.UseVisualStyleBackColor = true;
             this.btnConsultarProducto.Click += new System.EventHandler(this.btnConsultarProducto_Click);
             // 
+            // btnAtrasProducto
+            // 
+            this.btnAtrasProducto.Location = new System.Drawing.Point(669, 221);
+            this.btnAtrasProducto.Name = "btnAtrasProducto";
+            this.btnAtrasProducto.Size = new System.Drawing.Size(86, 23);
+            this.btnAtrasProducto.TabIndex = 19;
+            this.btnAtrasProducto.Text = "Atras";
+            this.btnAtrasProducto.UseVisualStyleBackColor = true;
+            this.btnAtrasProducto.Click += new System.EventHandler(this.BtnAtrasProducto_Click);
+            // 
             // frmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtrasProducto);
             this.Controls.Add(this.btnConsultarProducto);
             this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.dgvProducto);
@@ -218,5 +230,6 @@
         private System.Windows.Forms.DataGridView dgvProducto;
         private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.Button btnConsultarProducto;
+        private System.Windows.Forms.Button btnAtrasProducto;
     }
 }

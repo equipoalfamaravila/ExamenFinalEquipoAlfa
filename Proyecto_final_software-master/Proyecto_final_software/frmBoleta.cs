@@ -107,5 +107,11 @@ namespace Proyecto_final_software
         {
             Listar();
         }
+
+        private void BtnAtrasBoleta_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+        }
     }
 }
