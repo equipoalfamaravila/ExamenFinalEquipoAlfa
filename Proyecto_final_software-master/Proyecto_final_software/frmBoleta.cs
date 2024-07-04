@@ -72,13 +72,14 @@ namespace Proyecto_final_software
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Boleta boleta = new Boleta();
+            /*Boleta boleta = new Boleta();
             boleta.NroBoleta = Convert.ToInt32(txtNroBoleta.Text);
             boleta.Fecha = Convert.ToDateTime(txtFechaBoleta.Text);
             boleta.Anulado = Convert.ToBoolean(txtAnuladoBoleta.Text);
             boleta.CodCliente = txtCodClienteBoleta.Text;
             boleta.CodVendedor = txtCodVendedorBoleta.Text;
-            ventas.Boleta.InsertOnSubmit(boleta);
+            ventas.Boleta.InsertOnSubmit(boleta); 
+            
 
             try
             {
@@ -94,7 +95,13 @@ namespace Proyecto_final_software
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
-            }
+            }*/
+            frmVenta frmVenta = new frmVenta();
+            frmVenta.StartPosition = FormStartPosition.CenterScreen;
+            frmVenta.Show();
+            this.Hide();
+            frmVenta.FormClosed += (s, args) => this.Show();
+            frmVenta.FormClosed += (s, args) => this.Listar();
 
         }
 
