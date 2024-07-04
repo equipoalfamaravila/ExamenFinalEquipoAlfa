@@ -36,42 +36,46 @@
             // 
             // btnBoleta
             // 
+            this.btnBoleta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnBoleta.Location = new System.Drawing.Point(28, 38);
             this.btnBoleta.Name = "btnBoleta";
             this.btnBoleta.Size = new System.Drawing.Size(273, 162);
             this.btnBoleta.TabIndex = 0;
             this.btnBoleta.Text = "Boletas";
-            this.btnBoleta.UseVisualStyleBackColor = true;
+            this.btnBoleta.UseVisualStyleBackColor = false;
             this.btnBoleta.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnProductos
             // 
+            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnProductos.Location = new System.Drawing.Point(307, 38);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(281, 241);
             this.btnProductos.TabIndex = 1;
             this.btnProductos.Text = "Productos";
-            this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.UseVisualStyleBackColor = false;
             this.btnProductos.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnCliente
             // 
+            this.btnCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnCliente.Location = new System.Drawing.Point(38, 206);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(217, 216);
             this.btnCliente.TabIndex = 2;
             this.btnCliente.Text = "Clientes";
-            this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.UseVisualStyleBackColor = false;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btnVendedor
             // 
+            this.btnVendedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnVendedor.Location = new System.Drawing.Point(261, 285);
             this.btnVendedor.Name = "btnVendedor";
             this.btnVendedor.Size = new System.Drawing.Size(327, 137);
             this.btnVendedor.TabIndex = 3;
             this.btnVendedor.Text = "Vendedor";
-            this.btnVendedor.UseVisualStyleBackColor = true;
+            this.btnVendedor.UseVisualStyleBackColor = false;
             this.btnVendedor.Click += new System.EventHandler(this.button4_Click);
             // 
             // frmMenu
